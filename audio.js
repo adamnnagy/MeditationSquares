@@ -3,7 +3,8 @@ function myAudio(key, volume, audioFile, reverbKey) {
   this.audioFile = audioFile;
   this.volume = volume;
   this.audioFile.setVolume(volume);
-  this.counter = 0;
+  this.reverb = new p5.Reverb();
+  this.reverbOn = false;
   this.reverbKey = reverbKey;
 
 }
@@ -25,19 +26,19 @@ var description = [
 ];
 
 var keys = [
-  65,
-  83,
-  68,
-  70,
-  74,
-  75,
-  76,
-  186
+  'a',
+  's',
+  'd',
+  'f',
+  'j',
+  'k',
+  'l',
+  ';'
 ];
 
 var reverbKeys = [
-  81, 87, 69, 82,
-  85, 73, 79, 80
+  'q', 'w', 'e', 'r',
+  'u', 'i', 'o', 'p'
 ];
 
 var volumes = [

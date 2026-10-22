@@ -1,6 +1,6 @@
 function introText() {
-  this.line1 = 'ASDF and JKL; for music';
-  this.line2 = 'QWER and UIOP for effects';
+  this.line1 = 'Press ASDF and JKL; for music';
+  this.line2 = 'Press QWER and UIOP for effects';
   this.alpha = 255;
 }
 
@@ -18,7 +18,7 @@ introText.prototype.display = function () {
 
 introText.prototype.fade = function () {
   if (this.alpha > 0) {
-    this.alpha -= 1.5;
+    this.alpha -= 0.5;
   } else {
     return false;
   }
